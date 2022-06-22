@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+.slider-container{
+    position: relative;
+}
+
+.slider-item{
+    display: flex;
+    border: 1px solid red;
+    background-color: rgb(87, 87, 87);
+    justify-content: center;
+}
+
+.controls{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+
+.controls > button{
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+.tns-outer{
+    width: 100%;
+}

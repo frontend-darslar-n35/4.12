@@ -1,0 +1,35 @@
+POST  http://localhost:8040/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "firstname":"asdasdasdasd",
+    "email":"example12@gmail.com",
+    "password":"123444",
+    "code":"121233"
+}
+###
+
+POST  http://localhost:8040/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email":"example@gmail.com",
+    "password":"123444"
+} 
+
+### 
+GET http://localhost:8040/api/v1/auth
+
+
+### 
+POST http://localhost:8040/api/v1/auth/query-register-password
+Content-Type: application/json
+
+{
+    "email":"example12@gmail.com"
+}
+
+
+###
+GET http://localhost:8040/api/v1/users
+Authorization:  Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZmlyc3RuYW1lIjoiYXNkYXNkYXNkYXNkIiwibGFzdG5hbWUiOm51bGwsInVzZXJuYW1lIjpudWxsLCJiaXJ0aF9kYXRlIjpudWxsLCJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwicGhvbmUiOm51bGwsInJvbGUiOiJVU0VSIiwiZXhwIjoxNjU1OTE1NjM2MjU1fQ.JW_I2phr-rLoHtoYvKyzLBB31uUb-B7kKYxUdynjLgo
